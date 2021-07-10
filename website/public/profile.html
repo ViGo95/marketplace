@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Document</title>
+</head>
+<body class="h-screen flex">
+  <header class="flex fixed w-full justify-between items-center h-16 px-8 shadow-xl">
+    <!-- <img src="" alt=""> -->
+
+    <a href="">LOGO</a>
+
+    <input type="search" placeholder="Buscamos algo por ti?" class="border-2 border-gray-400 w-88 h-10 pl-5 rounded-full shadow focus:outline-none">
+
+    <nav class="flex justify-between w-72 h-full">
+      <a href="./market.html" class="flex items-center">
+        Articulos
+      </a>
+
+      <a href="./profile.html" class="flex items-center border-b-2 border-red-500">
+        Perfil
+      </a>
+
+      <a id="logout" href="./index.html" class="flex items-center">
+        Salir
+      </a>
+    </nav>
+  </header>
+
+  <main class="self-center grid grid-cols-6 grid-rows-4 gap-8 col-gap-16 mx-auto -mb-7 py-8 w-11/12 h-5/6">
+
+    <div class="grid grid-cols-5 grid-rows-3 border border-blue-300 col-span-3 row-span-2 rounded-lg shadow-lg">
+      <div class="bg-blue-400 col-span-2 row-span-3 rounded-l-md">
+        <img src="" alt="Photo del Usuario">
+      </div>
+      <h3 id="name"class="text-center pt-4 col-span-3">
+        Nombre completo
+      </h3>
+      <h3 id="username" class="text-center pt-4 col-span-3">
+        Usuario de Perfil
+      </h3>
+      <h3 id="email" class="text-center pt-4 col-span-3">
+        Email de Usuario
+      </h3>
+
+    </div>
+
+    <div class="border border-green-300 col-span-1 row-span-2 rounded-lg shadow-lg">
+      <div class="bg-green-300 h-8 flex justify-center items-center rounded-t-md text-center text-lg text-gray-100 px-4">
+        <h3>Facturas</h3>
+      </div>
+      <!-- <h3 id="loadBills" class="mx-auto my-auto">
+        Cargando...
+      </h3> -->
+      <div id="billList" class="flex flex-col overflow-auto h-44">
+
+        <h3 id="loadBills" class="mx-auto my-auto">
+          Cargando...
+        </h3>
+
+      </div>
+    </div>
+
+    <div class="border border-purple-300 col-span-2 row-span-4 rounded-lg shadow-lg">
+      <div class="bg-purple-300 h-1/12 flex justify-between items-center rounded-t-md text-center text-lg text-gray-100 px-4">
+        <h3>Carrito de Usuario</h3>
+        <button type="button" onclick="checkout()">
+          Checkout
+        </button>
+      </div>
+
+      <div id="articleList" class="flex flex-col overflow-auto h-11/12">
+
+        <h3 id="loadArticles" class="mx-auto my-auto">
+          Cargando...
+        </h3>
+
+      </div>
+    </div>
+
+    <div id="editSection" class="flex border border-red-300 col-span-4 row-span-2 rounded-lg shadow-lg">
+      <div class="bg-orange-400 flex w-full h-full rounded-md">
+        <button id="changeEdit" class="text-xl text-gray-700 mx-auto my-auto w-88 h-36">
+          Quieres editar tu perfil?
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-other-secundary fixed w-full bottom-0 flex justify-around h-10 text-main-secundary text-sm">
+    <div class="flex justify-evenly items-center w-36">
+      <h4>Developer</h4>
+      <div class="flex justify-evenly w-12">
+        <a href="">Gh</a>
+        <a href="">LI</a>
+      </div>
+    </div>
+    <div class="flex justify-evenly items-center w-36">
+      <h4>Social</h4>
+      <div class="flex justify-evenly w-16">
+        <a href="">Tw</a>
+        <a href="">Ig</a>
+      </div>
+    </div>
+    <div class="flex justify-evenly items-center w-36">
+      <h4>Contact</h4>
+      <div class="flex justify-evenly w-16">
+        <a href="">Ws</a>
+        <a href="">Gm</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/lib/axios.min.js"></script>
+  <script src="../scripts/profile.js"></script>
+</body>
+</h

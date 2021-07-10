@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Document</title>
+</head>
+<body class="h-screen flex justify-center items-center bg-other-primary">
+
+  <form class="bg-main-secundary flex items-center w-240 h-80 border-2 border-other-secundary rounded-xl">
+    <div class="flex flex-col justify-evenly items-center w-1/2 h-11/12 border-r border-other-secundary">
+      <h1 class="text-4xl">Registrate!</h1>
+      <input id="nameInput" type="text" placeholder="Nombres" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+      <input id="lastnameInput" type="text" placeholder="Apellidos" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+
+      <a href="./login.html" class="h-10"><i>Ya tengo una cuenta</i></a>
+    </div>
+    <div class="flex flex-col justify-evenly items-center w-1/2 h-11/12 border-l border-other-secundary">
+      <input id="usernameInput" type="text" placeholder="Nombre de Usuario" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+      <input id="passwordInput" type="password" placeholder="Contraseña" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+      <input id="emailInput" type="email" placeholder="Correo electronico" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+
+      <button id="submitBtn" type="button" class="bg-main-primary w-64 h-10 text-gray-300 text-center shadow-xl rounded-md">
+        Comencemos!
+      </button>
+    </div>
+  </form>
+
+  <script src="../scripts/lib/axios.min.js"></script>
+  <script src="../scripts/singup.js"></script>
+</body>
+</html>

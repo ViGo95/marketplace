@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Document</title>
+</head>
+<body class="h-screen flex justify-center items-center bg-other-primary">
+  <div class="bg-main-secundary flex items-center w-128 h-80 border-2 border-other-secundary rounded-xl">
+    <div class="flex flex-col justify-evenly items-center w-full h-11/12">
+      <form action="" class="flex flex-col justify-between w-64 h-56">
+        <h1 class="text-4xl text-center">Logueate!</h1>
+        <input id="usernameInput" type="text" placeholder="Nombre de usuario" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+        <input id="passwordInput" type="password" placeholder="Contraseña" class="border-b border-other-secundary rounded-none h-8 bg-transparent pl-4">
+        <button id="submitBtn" type="button" class="flex justify-center items-center bg-main-primary w-64 h-10 text-gray-300 text-center shadow-xl rounded-full">
+          <i>Vamos</i>
+        </button>
+      </form>
+
+      <a href="./signup.html" class="h-10">
+        <i>Aun no estoy registrado</i>
+      </a>
+    </div>
+  </div>
+
+  <script src="../scripts/lib/axios.min.js"></script>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>

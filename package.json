@@ -1,0 +1,25 @@
+{
+  "name": "vinascarrito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon api/server.js",
+    "build": "postcss website/styles/tailwind.css -o website/styles/style.css --watch"
+  },
+  "author": "Luis Viñas",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.14",
+    "mongoose-autopopulate": "^0.14.0",
+    "nanoid": "^3.1.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "nodemon": "^2.0.7"
+  }
+}
